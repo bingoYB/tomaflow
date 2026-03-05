@@ -127,6 +127,7 @@ const App = (): JSX.Element => {
   const lastCompletionAt = state.timer.lastCompletion?.at;
   const shortcuts = state.settings.shortcuts ?? defaultShortcuts;
   const settingsForView: Settings = { ...state.settings, shortcuts };
+  const logoSrc = `${import.meta.env.BASE_URL}logo.png`;
 
   const currentTask = state.tasks.find((task) => task.id === state.timer.currentTaskId);
   const currentTaskName = currentTask?.name ?? t("noTask");
@@ -592,7 +593,7 @@ const App = (): JSX.Element => {
         <header className="animate-panel-in mb-4 h-[60px] rounded-2xl border border-white/20 bg-white/60 shadow-glow backdrop-blur-xl dark:border-slate-700/80 dark:bg-slate-900/75">
           <div className="flex h-full items-center justify-between gap-3 px-3 sm:px-4">
             <div className="flex min-w-0 items-center gap-2">
-              <img src="/logo.png" alt="TomaFlow" className="h-8 w-8 rounded-lg" />
+              <img src={logoSrc} alt="TomaFlow" className="h-8 w-8 rounded-lg" />
               <h1 className="truncate text-base font-extrabold tracking-tight text-slate-900 dark:text-slate-50">{t("appTitle")}</h1>
               {isDemoMode ? (
                 <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-200">
