@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;700&family=Noto+Sans+Arabic:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-start: #fff4f2;
+  --bg-end: #ffe7dc;
+  --text-main: #0f172a;
+}
+
+:root.dark {
+  color-scheme: dark;
+  --bg-start: #1f0a0a;
+  --bg-end: #2b0b0b;
+  --text-main: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Manrope, "Noto Sans", "Noto Sans Arabic", sans-serif;
+  color: var(--text-main);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(244, 63, 94, 0.24), transparent 60%),
+    radial-gradient(1100px 420px at 90% -8%, rgba(249, 115, 22, 0.24), transparent 60%),
+    linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  transition: background 320ms ease, color 320ms ease;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.55);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
