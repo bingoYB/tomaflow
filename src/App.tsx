@@ -597,7 +597,7 @@ const App = (): JSX.Element => {
               <h1 className="truncate text-base font-extrabold tracking-tight text-slate-900 dark:text-slate-50">{t("appTitle")}</h1>
               {isDemoMode ? (
                 <span className="rounded-full border border-amber-300 bg-amber-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-700 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-200">
-                  #demo
+                  #{t("demoTag")}
                 </span>
               ) : null}
             </div>
@@ -732,7 +732,7 @@ const App = (): JSX.Element => {
               type="button"
               onClick={() => setIsHelpOpen(false)}
               className="absolute right-4 top-4 inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 transition hover:border-rose-300 hover:text-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
-              aria-label="Close"
+              aria-label={t("close")}
             >
               <X size={16} />
             </button>
@@ -789,7 +789,7 @@ const App = (): JSX.Element => {
               type="button"
               onClick={() => setIsSettingsOpen(false)}
               className="absolute right-4 top-4 z-10 inline-flex h-8 w-8 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 transition hover:border-rose-300 hover:text-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
-              aria-label="Close"
+              aria-label={t("close")}
             >
               <X size={16} />
             </button>

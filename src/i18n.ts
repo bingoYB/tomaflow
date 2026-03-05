@@ -88,7 +88,9 @@ const zh = {
   spaceKey: "空格",
   clearData: "清空本地数据",
   clearDataConfirm: "确定要清空所有本地数据吗？此操作不可恢复。",
-  clearDataSuccess: "数据已清空"
+  clearDataSuccess: "数据已清空",
+  close: "关闭",
+  demoTag: "演示"
 };
 
 type Messages = Partial<Record<keyof typeof zh, string>>;
@@ -181,7 +183,9 @@ const en: Messages = {
   spaceKey: "Space",
   clearData: "Clear local data",
   clearDataConfirm: "Are you sure you want to clear all local data? This cannot be undone.",
-  clearDataSuccess: "Data cleared"
+  clearDataSuccess: "Data cleared",
+  close: "Close",
+  demoTag: "Demo"
 };
 
 const hi: Messages = {
@@ -252,7 +256,9 @@ const hi: Messages = {
   hoursUnit: "घं",
   chartLegendWork: "कार्य",
   chartLegendPomodoro: "पोमोडोरो",
-  installationHint: "ऐप के रूप में इंस्टॉल करें"
+  installationHint: "ऐप के रूप में इंस्टॉल करें",
+  close: "बंद करें",
+  demoTag: "डेमो"
 };
 
 const es: Messages = {
@@ -323,7 +329,9 @@ const es: Messages = {
   hoursUnit: "h",
   chartLegendWork: "Trabajo",
   chartLegendPomodoro: "Pomodoros",
-  installationHint: "Instalar como app"
+  installationHint: "Instalar como app",
+  close: "Cerrar",
+  demoTag: "Demo"
 };
 
 const ar: Messages = {
@@ -394,7 +402,9 @@ const ar: Messages = {
   hoursUnit: "س",
   chartLegendWork: "العمل",
   chartLegendPomodoro: "بومودورو",
-  installationHint: "ثبّت التطبيق"
+  installationHint: "ثبّت التطبيق",
+  close: "إغلاق",
+  demoTag: "تجريبي"
 };
 
 const fr: Messages = {
@@ -465,7 +475,9 @@ const fr: Messages = {
   hoursUnit: "h",
   chartLegendWork: "Travail",
   chartLegendPomodoro: "Pomodoros",
-  installationHint: "Installer l'application"
+  installationHint: "Installer l'application",
+  close: "Fermer",
+  demoTag: "Démo"
 };
 
 const bn: Messages = {
@@ -536,7 +548,9 @@ const bn: Messages = {
   hoursUnit: "ঘ",
   chartLegendWork: "কাজ",
   chartLegendPomodoro: "পোমোডোরো",
-  installationHint: "অ্যাপ হিসেবে ইনস্টল করুন"
+  installationHint: "অ্যাপ হিসেবে ইনস্টল করুন",
+  close: "বন্ধ করুন",
+  demoTag: "ডেমো"
 };
 
 const pt: Messages = {
@@ -607,7 +621,9 @@ const pt: Messages = {
   hoursUnit: "h",
   chartLegendWork: "Trabalho",
   chartLegendPomodoro: "Pomodoros",
-  installationHint: "Instalar como app"
+  installationHint: "Instalar como app",
+  close: "Fechar",
+  demoTag: "Demo"
 };
 
 const ru: Messages = {
@@ -678,7 +694,9 @@ const ru: Messages = {
   hoursUnit: "ч",
   chartLegendWork: "Работа",
   chartLegendPomodoro: "Помодоро",
-  installationHint: "Установить как приложение"
+  installationHint: "Установить как приложение",
+  close: "Закрыть",
+  demoTag: "Демо"
 };
 
 const ur: Messages = {
@@ -749,7 +767,9 @@ const ur: Messages = {
   hoursUnit: "گھنٹہ",
   chartLegendWork: "کام",
   chartLegendPomodoro: "پوموڈورو",
-  installationHint: "ایپ کے طور پر انسٹال کریں"
+  installationHint: "ایپ کے طور پر انسٹال کریں",
+  close: "بند کریں",
+  demoTag: "ڈیمو"
 };
 
 export type TranslationKey = keyof typeof zh;
