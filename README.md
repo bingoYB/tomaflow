@@ -1,56 +1,65 @@
-# TomaFlowPomodoro (PWA)
+# TomaFlow Pomodoro (PWA)
 
-一个纯前端番茄钟应用，基于 React + TypeScript + Tailwind CSS，支持 PWA、任务管理、统计图表、多语言和明暗主题。
+**Read this in:** English | [简体中文](README.zh-CN.md) | [Español](README.es.md)
 
-## 技术栈
+[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+![React 18](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=222)
+![TypeScript 5](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite 5](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8)
+
+A modern, frontend-only Pomodoro app built with React + TypeScript + Tailwind CSS.  
+It includes task management, analytics dashboards, multi-language support, dark mode, and installable PWA capabilities.
+
+## Live Demo
+
+- GitHub Pages: https://bingoyb.github.io/toma_flow/
+- Demo mode: append `#demo` to the URL (example: `https://bingoyb.github.io/toma_flow/#demo`)
+
+## Tech Stack
 
 - React 18
 - TypeScript 5
 - Vite 5
 - Tailwind CSS 3
-- Recharts（统计图）
-- vite-plugin-pwa（离线与安装能力）
+- Recharts (charts)
+- vite-plugin-pwa (offline and install support)
 
-## 已实现功能
+## Features
 
-- 番茄钟基础流程：`工作 / 短休息 / 长休息`
-- 倒计时结束通知：支持音效与系统通知
-- 任务管理（Todo 风格）：
-  - 任务名称
-  - 预计工作时长（分钟）
-  - 指定任务开始专注
-- 统计视图（表格 + 图表）：
-  - 总工作时长
-  - 总休息时长
-  - 完成番茄数
-  - 专注率（工作/总时间）
-  - 每日任务工作时长表格
-  - 每日工作时长折线图
-  - 任务工作占比饼图
-  - 每日番茄数量柱状图
-- 设置能力：
-  - 自定义工作/休息时长
-  - 通知音效切换与预览
-  - 通知音量设置
-  - 系统横幅通知开关
-- 国际化（10 语言）：
-  - 汉语、英语、印地语、西班牙语、阿拉伯语、法语、孟加拉语、葡萄牙语、俄语、乌尔都语
-- 明暗主题切换
-- PWA：可安装到桌面，支持离线缓存
+- Pomodoro workflow: `Work / Short Break / Long Break`
+- End-of-session notifications (sound + system notifications)
+- Task management:
+- Create tasks with estimated duration
+- Start focus from a specific task
+- Mark done / reopen / delete / reorder (drag and drop)
+- Analytics (table + charts):
+- Total work time
+- Total break time
+- Completed pomodoros
+- Focus rate
+- Daily task breakdown
+- Daily work trend
+- Task distribution pie chart
+- Daily pomodoro bar chart
+- Settings:
+- Custom work/break durations
+- Notification sound switching and preview
+- Notification volume
+- System notification toggle
+- Internationalization (10 languages):
+- Chinese, English, Hindi, Spanish, Arabic, French, Bengali, Portuguese, Russian, Urdu
+- Light/Dark themes
+- Installable PWA with offline cache
 
-## 启动方式
+## Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 演示数据模式
-
-- 在地址后追加 `#demo`（如 `http://localhost:5173/#demo`）即可进入演示模式。
-- 演示模式会展示内置任务与近 7 天统计数据，不会覆盖本地真实数据。
-
-## 生产构建
+## Build for Production
 
 ```bash
 npm run build
