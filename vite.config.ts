@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
+  base: "/toma_flow/",
   plugins: [
     react(),
     VitePWA({
@@ -15,7 +16,8 @@ export default defineConfig({
         theme_color: "#b91c1c",
         background_color: "#1f0a0a",
         display: "standalone",
-        start_url: "/",
+        start_url: "/toma_flow/",
+        scope: "/toma_flow/",
         icons: [
           {
             src: "icons/icon-192.png",
