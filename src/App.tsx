@@ -1,4 +1,4 @@
-import { CircleHelp, Download, Globe2, MoonStar, Settings2, SunMedium, X } from "lucide-react";
+import { CircleHelp, Download, Github, Globe2, MoonStar, Settings2, SunMedium, X } from "lucide-react";
 import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState, type SetStateAction } from "react";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { TaskPanel } from "./components/TaskPanel";
@@ -28,6 +28,7 @@ type DeferredPromptEvent = Event & {
 type PermissionResult = "ok" | "unsupported" | "denied";
 
 const stateStorageKey = "focus-flow-state-v1";
+const githubRepoUrl = "https://github.com/bingoYB/toma_flow";
 const StatsPanel = lazy(() =>
   import("./components/StatsPanel").then((module) => ({
     default: module.StatsPanel
@@ -641,6 +642,16 @@ const App = (): JSX.Element => {
                 <CircleHelp size={14} />
                 {/* <span className="hidden sm:inline">{t("helpEntry")}</span> */}
               </button>
+
+              <a
+                href={githubRepoUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                className="inline-flex h-9 items-center gap-1 rounded-xl border border-slate-300 bg-white/80 px-3 text-xs font-semibold text-slate-700 transition hover:border-rose-300 hover:text-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-300 dark:border-slate-600 dark:bg-slate-800/80 dark:text-slate-100 dark:hover:border-rose-500"
+              >
+                <Github size={14} />
+              </a>
 
               <button
                 type="button"
