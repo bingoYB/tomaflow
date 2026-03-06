@@ -22,6 +22,10 @@
 
 Aplicación Pomodoro moderna, 100% frontend, construida con React + TypeScript + Tailwind CSS.
 
+## Captura
+
+![Captura de TomaFlow](demo.png)
+
 ## Demo en línea
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/

@@ -21,6 +21,10 @@
 一个现代化纯前端番茄钟应用，基于 React + TypeScript + Tailwind CSS。  
 支持任务管理、统计图表、多语言、明暗主题与可安装 PWA。
 
+## 截图
+
+![TomaFlow 截图](demo.png)
+
 ## 在线地址
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/
