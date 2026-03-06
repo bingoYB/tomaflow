@@ -13,19 +13,19 @@
 ![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8)
 
 
-[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+[![Deploy to GitHub Pages](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml)
 [![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/toma_flow&project-name=toma_flow&repository-name=toma_flow)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/tomaflow&project-name=tomaflow&repository-name=tomaflow)
 
 一个现代化纯前端番茄钟应用，基于 React + TypeScript + Tailwind CSS。  
 支持任务管理、统计图表、多语言、明暗主题与可安装 PWA。
 
 ## 在线地址
 
-- GitHub Pages: https://bingoyb.github.io/toma_flow/
+- GitHub Pages: https://bingoyb.github.io/tomaflow/
 - 演示模式：URL 末尾加 `#demo`
-- 示例：`https://bingoyb.github.io/toma_flow/#demo`
+- 示例：`https://bingoyb.github.io/tomaflow/#demo`
 
 ## 一键部署
 
@@ -36,14 +36,14 @@
 
 本项目通过 `VITE_BASE_PATH` 兼容不同部署方式：
 
-- GitHub Pages：`VITE_BASE_PATH=/toma_flow/`
+- GitHub Pages：`VITE_BASE_PATH=/tomaflow/`
 - Vercel：默认 `/`
 - Cloudflare Pages：默认 `/`
 
 已配置文件：
 
 - `vite.config.ts`：动态 `base`，并同步 PWA `start_url` 与 `scope`
-- `.github/workflows/deploy-pages.yml`：构建时注入 `VITE_BASE_PATH=/toma_flow/`
+- `.github/workflows/deploy-pages.yml`：构建时注入 `VITE_BASE_PATH=/tomaflow/`
 - `vercel.json`：Vite 构建输出与 SPA 路由回退
 - `wrangler.toml`：Cloudflare Pages 输出目录
 - `public/_redirects`：静态托管下的 SPA 回退规则

@@ -15,19 +15,19 @@
 ![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8)
 
 
-[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+[![Deploy to GitHub Pages](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml)
 [![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/toma_flow&project-name=toma_flow&repository-name=toma_flow)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/tomaflow&project-name=tomaflow&repository-name=tomaflow)
 
 Modern frontend-only Pomodoro app built with React + TypeScript + Tailwind CSS.  
 Includes tasks, analytics, multilingual UI, dark mode, and installable PWA support.
 
 ## Live Demo
 
-- GitHub Pages: https://bingoyb.github.io/toma_flow/
+- GitHub Pages: https://bingoyb.github.io/tomaflow/
 - Demo mode: append `#demo` to the URL
-- Example: `https://bingoyb.github.io/toma_flow/#demo`
+- Example: `https://bingoyb.github.io/tomaflow/#demo`
 
 ## Tech Stack
 
@@ -58,14 +58,14 @@ Includes tasks, analytics, multilingual UI, dark mode, and installable PWA suppo
 
 This project now supports multiple deployment targets through `VITE_BASE_PATH`:
 
-- GitHub Pages: `VITE_BASE_PATH=/toma_flow/`
+- GitHub Pages: `VITE_BASE_PATH=/tomaflow/`
 - Vercel: default `/`
 - Cloudflare Pages: default `/`
 
 Implemented config:
 
 - `vite.config.ts`: dynamic `base`, PWA `start_url`, and `scope`
-- `.github/workflows/deploy-pages.yml`: sets `VITE_BASE_PATH=/toma_flow/` during build
+- `.github/workflows/deploy-pages.yml`: sets `VITE_BASE_PATH=/tomaflow/` during build
 - `vercel.json`: Vite build/output + SPA rewrite
 - `wrangler.toml`: Cloudflare Pages output directory
 - `public/_redirects`: SPA fallback for Pages-style hosting

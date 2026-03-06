@@ -14,19 +14,19 @@
 ![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8)
 
 
-[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+[![Deploy to GitHub Pages](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/tomaflow/actions/workflows/deploy-pages.yml)
 [![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/toma_flow&project-name=toma_flow&repository-name=toma_flow)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/tomaflow&project-name=tomaflow&repository-name=tomaflow)
 
 
 Aplicación Pomodoro moderna, 100% frontend, construida con React + TypeScript + Tailwind CSS.
 
 ## Demo en línea
 
-- GitHub Pages: https://bingoyb.github.io/toma_flow/
+- GitHub Pages: https://bingoyb.github.io/tomaflow/
 - Modo demo: agrega `#demo` al final de la URL
-- Ejemplo: `https://bingoyb.github.io/toma_flow/#demo`
+- Ejemplo: `https://bingoyb.github.io/tomaflow/#demo`
 
 ## Despliegue en un clic
 
@@ -37,14 +37,14 @@ Aplicación Pomodoro moderna, 100% frontend, construida con React + TypeScript +
 
 El proyecto usa `VITE_BASE_PATH` para soportar distintas plataformas:
 
-- GitHub Pages: `VITE_BASE_PATH=/toma_flow/`
+- GitHub Pages: `VITE_BASE_PATH=/tomaflow/`
 - Vercel: valor por defecto `/`
 - Cloudflare Pages: valor por defecto `/`
 
 Archivos de configuración:
 
 - `vite.config.ts`: `base` dinámico y PWA (`start_url`, `scope`)
-- `.github/workflows/deploy-pages.yml`: define `VITE_BASE_PATH=/toma_flow/`
+- `.github/workflows/deploy-pages.yml`: define `VITE_BASE_PATH=/tomaflow/`
 - `vercel.json`: build/output de Vite + fallback SPA
 - `wrangler.toml`: salida de build para Cloudflare Pages
 - `public/_redirects`: fallback de rutas SPA para hosting estático

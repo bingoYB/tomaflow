@@ -28,7 +28,7 @@ type DeferredPromptEvent = Event & {
 type PermissionResult = "ok" | "unsupported" | "denied";
 
 const stateStorageKey = "focus-flow-state-v1";
-const githubRepoUrl = "https://github.com/bingoYB/toma_flow";
+const githubRepoUrl = "https://github.com/bingoYB/tomaflow";
 const StatsPanel = lazy(() =>
   import("./components/StatsPanel").then((module) => ({
     default: module.StatsPanel

@@ -33,7 +33,7 @@ jobs:
 
       - name: Build
         env:
-          VITE_BASE_PATH: /toma_flow/
+          VITE_BASE_PATH: /tomaflow/
         run: npm run build
 
       - name: Setup Pages
