@@ -23,6 +23,10 @@
 Modern frontend-only Pomodoro app built with React + TypeScript + Tailwind CSS.  
 Includes tasks, analytics, multilingual UI, dark mode, and installable PWA support.
 
+## Screenshot
+
+![TomaFlow Screenshot](demo.png)
+
 ## Live Demo
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/
