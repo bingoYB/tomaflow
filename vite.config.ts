@@ -2,8 +2,15 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 
+const normalizeBasePath = (value: string): string => {
+  const withLeadingSlash = value.startsWith("/") ? value : `/${value}`;
+  return withLeadingSlash.endsWith("/") ? withLeadingSlash : `${withLeadingSlash}/`;
+};
+
+const basePath = normalizeBasePath(process.env.VITE_BASE_PATH ?? "/");
+
 export default defineConfig({
-  base: "/toma_flow/",
+  base: basePath,
   plugins: [
     react(),
     VitePWA({
@@ -16,8 +23,8 @@ export default defineConfig({
         theme_color: "#b91c1c",
         background_color: "#1f0a0a",
         display: "standalone",
-        start_url: "/toma_flow/",
-        scope: "/toma_flow/",
+        start_url: basePath,
+        scope: basePath,
         icons: [
           {
             src: "icons/icon-192.png",

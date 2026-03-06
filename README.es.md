@@ -1,56 +1,53 @@
+<p>
+  <img src="public/logo.png" alt="TomaFlow Logo" width="96" />
+</p>
+
+
 # TomaFlow Pomodoro (PWA)
 
 **Leer en:** [English](README.md) | [简体中文](README.zh-CN.md) | Español
 
-[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+
 ![React 18](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=222)
 ![TypeScript 5](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
 ![Vite 5](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-Enabled-5A0FC8)
 
-Una app Pomodoro moderna, totalmente frontend, construida con React + TypeScript + Tailwind CSS.  
-Incluye gestión de tareas, paneles de estadísticas, soporte multilingüe, modo oscuro y capacidades PWA instalables.
+
+[![Deploy to GitHub Pages](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/bingoYB/toma_flow/actions/workflows/deploy-pages.yml)
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to-Cloudflare%20Pages-F38020?logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bingoYB/toma_flow&project-name=toma_flow&repository-name=toma_flow)
+
+
+Aplicación Pomodoro moderna, 100% frontend, construida con React + TypeScript + Tailwind CSS.
 
 ## Demo en línea
 
 - GitHub Pages: https://bingoyb.github.io/toma_flow/
-- Modo demo: añade `#demo` al final de la URL (ejemplo: `https://bingoyb.github.io/toma_flow/#demo`)
+- Modo demo: agrega `#demo` al final de la URL
+- Ejemplo: `https://bingoyb.github.io/toma_flow/#demo`
 
-## Stack técnico
+## Despliegue en un clic
 
-- React 18
-- TypeScript 5
-- Vite 5
-- Tailwind CSS 3
-- Recharts (gráficas)
-- vite-plugin-pwa (soporte offline e instalación)
+- Vercel: haz clic en `Deploy with Vercel`
+- Cloudflare Pages: haz clic en `Deploy to Cloudflare Pages` e importa este repositorio de GitHub
 
-## Funcionalidades
+## Compatibilidad de despliegue
 
-- Flujo Pomodoro: `Trabajo / Descanso Corto / Descanso Largo`
-- Notificaciones al finalizar sesión (sonido + notificaciones del sistema)
-- Gestión de tareas:
-- Crear tareas con duración estimada
-- Iniciar enfoque desde una tarea específica
-- Marcar como completada / reabrir / eliminar / reordenar (arrastrar y soltar)
-- Estadísticas (tabla + gráficas):
-- Tiempo total de trabajo
-- Tiempo total de descanso
-- Pomodoros completados
-- Tasa de enfoque
-- Resumen diario por tarea
-- Tendencia diaria de trabajo
-- Gráfico de distribución por tarea
-- Gráfico diario de pomodoros
-- Configuración:
-- Duraciones personalizadas de trabajo/descanso
-- Cambio y vista previa de sonidos
-- Volumen de notificaciones
-- Interruptor de notificaciones del sistema
-- Internacionalización (10 idiomas):
-- Chino, inglés, hindi, español, árabe, francés, bengalí, portugués, ruso y urdu
-- Tema claro/oscuro
-- PWA instalable con caché offline
+El proyecto usa `VITE_BASE_PATH` para soportar distintas plataformas:
+
+- GitHub Pages: `VITE_BASE_PATH=/toma_flow/`
+- Vercel: valor por defecto `/`
+- Cloudflare Pages: valor por defecto `/`
+
+Archivos de configuración:
+
+- `vite.config.ts`: `base` dinámico y PWA (`start_url`, `scope`)
+- `.github/workflows/deploy-pages.yml`: define `VITE_BASE_PATH=/toma_flow/`
+- `vercel.json`: build/output de Vite + fallback SPA
+- `wrangler.toml`: salida de build para Cloudflare Pages
+- `public/_redirects`: fallback de rutas SPA para hosting estático
 
 ## Inicio rápido
 
