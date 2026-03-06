@@ -24,6 +24,8 @@
 ## 在线地址
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/
+- Cloudflare Pages: https://tomaflow.pages.dev/
+- Vercel: https://tomaflow.vercel.app/
 - 演示模式：URL 末尾加 `#demo`
 - 示例：`https://bingoyb.github.io/tomaflow/#demo`
 

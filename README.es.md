@@ -25,6 +25,8 @@ Aplicación Pomodoro moderna, 100% frontend, construida con React + TypeScript +
 ## Demo en línea
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/
+- Cloudflare Pages: https://tomaflow.pages.dev/
+- Vercel: https://tomaflow.vercel.app/
 - Modo demo: agrega `#demo` al final de la URL
 - Ejemplo: `https://bingoyb.github.io/tomaflow/#demo`
 

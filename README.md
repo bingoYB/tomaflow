@@ -26,6 +26,8 @@ Includes tasks, analytics, multilingual UI, dark mode, and installable PWA suppo
 ## Live Demo
 
 - GitHub Pages: https://bingoyb.github.io/tomaflow/
+- Cloudflare Pages: https://tomaflow.pages.dev/
+- Vercel: https://tomaflow.vercel.app/
 - Demo mode: append `#demo` to the URL
 - Example: `https://bingoyb.github.io/tomaflow/#demo`
 
